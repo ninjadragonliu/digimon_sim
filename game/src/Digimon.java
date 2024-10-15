@@ -8,9 +8,9 @@ public abstract class Digimon {
 
     private int level;
     private int exp;
-    private String type;
+    private DigimonTypes type;
 
-    public Digimon(String name, String type, int hp, int attack, int defense, int speed)
+    public Digimon(String name, DigimonTypes type, int hp, int attack, int defense, int speed)
     {
         this.name = name;
         this.type = type;
@@ -45,8 +45,4 @@ public abstract class Digimon {
 
     public abstract Digimon Digivolve();
 
-    public void setType(String type)
-    {
-        this.type = type;
-    }
 }
