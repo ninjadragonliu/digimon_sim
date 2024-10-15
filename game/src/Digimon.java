@@ -8,6 +8,7 @@ public abstract class Digimon {
 
     private int level;
     private int exp;
+    private String type;
 
     public Digimon()
     {
@@ -35,4 +36,9 @@ public abstract class Digimon {
     }
 
     public abstract void Digivolve();
+
+    public void setType(String type)
+    {
+        this.type = type;
+    }
 }
