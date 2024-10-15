@@ -8,4 +8,31 @@ public abstract class Digimon {
 
     private int level;
     private int exp;
+
+    public Digimon()
+    {
+
+    }
+
+    public void attack()
+    {
+
+    }
+
+    public void defend()
+    {
+
+    }
+
+    public void levelUp()
+    {
+
+    }
+
+    public void takeDamage(int damage)
+    {
+
+    }
+
+    public abstract void Digivolve();
 }
