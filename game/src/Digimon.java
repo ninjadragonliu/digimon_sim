@@ -10,8 +10,16 @@ public abstract class Digimon {
     private int exp;
     private String type;
 
-    public Digimon()
+    public Digimon(String name, String type, int hp, int attack, int defense, int speed)
     {
+        this.name = name;
+        this.type = type;
+        this.hp = hp;
+        this.attack = attack;
+        this.defense = defense;
+        this.speed = speed;
+        this.level = 1;
+        this.exp = 0;
 
     }
 
