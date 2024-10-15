@@ -43,7 +43,7 @@ public abstract class Digimon {
 
     }
 
-    public abstract void Digivolve();
+    public abstract Digimon Digivolve();
 
     public void setType(String type)
     {
