@@ -1,7 +1,7 @@
 public class VaccineDigimon extends Digimon{
 
     public VaccineDigimon() {
-        super(name, "Vaccine", hp, attack, defense, speed);
+        super("", "Vaccine", 10, 10, 10, 10);
     }
 
     @Override
