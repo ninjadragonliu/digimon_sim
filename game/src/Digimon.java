@@ -48,6 +48,10 @@ public abstract class Digimon {
     {
 
     }
+    public void gainExp(int exp)
+    {
+        this.exp += exp;
+    }
 
     public abstract Digimon Digivolve();
 
