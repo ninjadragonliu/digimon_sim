@@ -46,7 +46,7 @@ public abstract class Digimon {
 
     public void takeDamage(int damage)
     {
-
+        this.hp -= damage;
     }
     public void gainExp(int exp)
     {
