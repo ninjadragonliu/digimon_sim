@@ -26,4 +26,14 @@ public class Tamer {
         this.exp = 0;
         this.nextLevelExp = nextLevelExp * 2;
     }
+
+    public void gainExp(int exp)
+    {
+        if(exp + this.exp >= nextLevelExp)
+        {
+            levelUp();
+            exp = exp - nextLevelExp + this.exp;
+        }
+        this.exp += exp;
+    }
 }
