@@ -11,6 +11,7 @@ public abstract class Digimon {
     private int level;
     private int exp;
     private int nextLevelExp = 50;
+    private int levelCap = 50;
     private DigimonTypes type;
 
     public Digimon(String name, DigimonTypes type, int hp, int attack, int defense, int speed)
