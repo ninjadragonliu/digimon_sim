@@ -36,9 +36,9 @@ public abstract class Digimon {
 
     public void levelUp()
     {
-       level++;
-       nextLevelExp = nextLevelExp * 2;
-       exp = 0;
+       this.level++;
+       this.nextLevelExp = nextLevelExp * 2;
+       this.exp = 0;
     }
 
     public void takeDamage(int damage)
@@ -47,6 +47,11 @@ public abstract class Digimon {
     }
     public void gainExp(int exp)
     {
+        if(exp + this.exp >= nextLevelExp)
+        {
+            levelUp();
+            exp = exp - nextLevelExp + this.exp;
+        }
         this.exp += exp;
     }
 
