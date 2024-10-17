@@ -3,6 +3,7 @@ public class Tamer {
     private int tamerLevel;
     private int exp;
     private int nextLevelExp = 50;
+    private int levelCap = 10;
 
     public int getTamerLevel() {
         return tamerLevel;
@@ -22,6 +23,11 @@ public class Tamer {
 
     public void levelUp()
     {
+        if(tamerLevel++ >= levelCap)
+        {
+            tamerLevel = levelCap;
+            return;
+        }
         this.tamerLevel++;
         this.exp = 0;
         this.nextLevelExp = nextLevelExp * 2;
@@ -29,6 +35,11 @@ public class Tamer {
 
     public void gainExp(int exp)
     {
+        if(exp + this.exp >= nextLevelExp && tamerLevel == levelCap)
+        {
+            this.exp = nextLevelExp;
+            return;
+        }
         if(exp + this.exp >= nextLevelExp)
         {
             levelUp();
