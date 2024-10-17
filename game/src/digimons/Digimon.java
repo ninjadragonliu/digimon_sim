@@ -1,3 +1,5 @@
+package digimons;
+
 public abstract class Digimon {
 
     private String name;
