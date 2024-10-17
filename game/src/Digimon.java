@@ -36,12 +36,9 @@ public abstract class Digimon {
 
     public void levelUp()
     {
-        if (exp >= nextLevelExp)
-        {
-            level++;
-            nextLevelExp = nextLevelExp * 2;
-            exp = 0;
-        }
+       level++;
+       nextLevelExp = nextLevelExp * 2;
+       exp = 0;
     }
 
     public void takeDamage(int damage)
@@ -54,5 +51,14 @@ public abstract class Digimon {
     }
 
     public abstract Digimon Digivolve();
+
+    public void train()
+    {
+        this.hp += 1;
+        this.attack += 1;
+        this.defense += 1;
+        this.speed += 1;
+        System.out.println(this.name + " stats have been increased!");
+    }
 
 }
