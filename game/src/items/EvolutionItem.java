@@ -1,4 +1,4 @@
 package items;
 
-public class EvolutionItem {
+public class EvolutionItem extends Item {
 }
