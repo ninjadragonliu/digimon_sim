@@ -66,4 +66,7 @@ public abstract class Digimon {
         System.out.println(this.name + " stats have been increased!");
     }
 
+    public String getName() {
+        return name;
+    }
 }
