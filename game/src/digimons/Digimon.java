@@ -39,6 +39,11 @@ public abstract class Digimon {
 
     public void levelUp()
     {
+        if(level++ >= levelCap)
+        {
+            level = levelCap;
+            return;
+        }
        this.level++;
        this.nextLevelExp = nextLevelExp * 2;
        this.exp = 0;
@@ -50,6 +55,11 @@ public abstract class Digimon {
     }
     public void gainExp(int exp)
     {
+        if(exp + this.exp >= nextLevelExp && level == levelCap)
+        {
+            this.exp = nextLevelExp;
+            return;
+        }
         if(exp + this.exp >= nextLevelExp)
         {
             levelUp();
