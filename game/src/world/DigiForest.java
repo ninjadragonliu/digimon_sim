@@ -1,4 +1,4 @@
 package world;
 
-public class DigiForest {
+public class DigiForest extends Environment{
 }

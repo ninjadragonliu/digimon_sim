@@ -1,4 +1,4 @@
 package world;
 
-public class DigiCity {
+public class DigiCity extends Environment {
 }
