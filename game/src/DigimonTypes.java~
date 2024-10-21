@@ -1,0 +1,5 @@
+public enum DigimonTypes {
+    VACCINE("Vaccine"),
+    VIRUS("Virus"),
+    DATA("Data");
+}
